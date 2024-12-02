@@ -29,12 +29,16 @@ if not exist %temp% mkdir %temp%
 if not exist C:\Windows\Temp mkdir C:\Windows\Temp
 if not exist C:\Windows\Prefetch mkdir C:\Windows\Prefetch
 
+setlocal DisableDelayedExpansion
+
 if %SizeInGB% geq 1 (
-    echo Cleaning completed! [%SizeInGB% GB files removed]
+    echo Cleanup completed! [%SizeInGB% GB files removed]
 ) else if %SizeInMB% geq 1 (
-    echo Cleaning completed! [%SizeInMB% MB files removed]
+    echo Cleanup completed! [%SizeInMB% MB files removed]
 ) else (
-    echo Cleaning completed! [Less than 1 MB files removed]
+    echo Cleanup completed! [Less than 1 MB files removed]
 )
+
+endlocal
 
 pause
