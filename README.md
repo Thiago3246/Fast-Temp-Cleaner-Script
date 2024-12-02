@@ -2,6 +2,8 @@
 
 Run this script whenever you want to clean your Windows temporary files with just one click! It's a very fast shortcut that saves you from constantly pressing 'Windows + R', typing '%temp%', and manually deleting these files.
 
+![image](https://github.com/user-attachments/assets/658af5cd-9804-417f-ab34-22a9b7a6eb9e)
+
 ### What does this script do?
 - Cleans temporary files from well-known locations: `%temp%`, `C:\Windows\Temp`, and `C:\Windows\Prefetch`.
 - Provides a simple output indicating the amount of space cleared.
